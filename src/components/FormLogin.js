@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import useLogin from './useLogin';
 import {Link} from 'react-router-dom'
-import './Form.css';
+import '../App.scss';
 
 const FormLogIn=()=>{
     const{handleChange,handleSubmit,credentials}=useLogin();

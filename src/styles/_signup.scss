@@ -1,0 +1,63 @@
+.sign_up {
+  background-color: $warm;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  .container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 431px;
+    height: 70%;
+    margin: 15vh auto;
+    background-color: $white;
+    z-index: 100;
+    border-radius: 3em;
+    h1 {
+      padding-top: 1em;
+    }
+  }
+}
+
+.form-input {
+  margin-top: 2em;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  .reg {
+    margin-right: auto;
+    input {
+      display: block;
+      padding: 0.5em;
+      width: 25vw;
+      max-width: 288px;
+      height: 40%;
+    }
+  }
+}
+
+.loginLink {
+  text-decoration: none;
+  color: $dark-blue;
+  text-align: center;
+  padding: 1em;
+  display: block;
+  &:hover {
+    color: $brown;
+  }
+}
+button {
+  border-radius: 1em;
+  font-family: $head;
+  font-size: 1em;
+  display: block;
+  width: 40%;
+  height: 20%;
+  margin: 1em auto 0;
+  border: none;
+  cursor: pointer;
+}
