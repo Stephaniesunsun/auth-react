@@ -1,5 +1,7 @@
-import React,{useState} from 'react';
-import useLogin from './useLogin';
+//the login page
+
+import React from 'react';
+import useLogin from './hooks/useLogin';
 import {Link} from 'react-router-dom'
 import '../App.scss';
 

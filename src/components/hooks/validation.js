@@ -1,12 +1,12 @@
-
-
-const validation=values=>{
-    const error={};
+//input validation:
     //email required
     //email format-> regex
     //username required
     //password required
-    //more than 10 char
+    //password more than 10 char
+
+const validation=values=>{
+    const error={};
     if(!values.email){
         error.email='email is required';
     }

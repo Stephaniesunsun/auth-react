@@ -1,14 +1,13 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import axios from 'axios';
-//write a custom hook (function)
+
 const useForm=(validation)=>{
-    //where do i need submit and validation functions?
-    const [values,setValues]=useState({ //declare a hook
+    const [values,setValues]=useState({ 
         name:'',
         email:'',
         password:''
     });
-    const [error,setError]=useState({})//declare another hook
+    const [error,setError]=useState({})
     const handleChange=e=>{
        const {name, value}=e.target;
         setValues({ 
@@ -16,18 +15,15 @@ const useForm=(validation)=>{
             [name]:value
         })
     }
-    const handleSubmit=e=>{//we need to build API to pass it to the server side.
+    const handleSubmit=e=>{//make request to serverside endpoint
         e.preventDefault();
         setError(validation(values))//update error
-        //console.log(values);
-        axios.post('http://localhost:8080/api/user/register',values)
+        axios.post('http://localhost:8080/api/user/register',values)//submit all the valid input fields
         .then((response)=>{
             console.log(response);
         }).catch((error)=>{
             console.log(error);
         })
-        //window.location to redirect to another page 
-        //clear all the input field
      }
      return {
          handleChange,

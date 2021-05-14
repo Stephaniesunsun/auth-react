@@ -1,12 +1,13 @@
+//the signup page 
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../App.scss';
-import useForm from './useForm';
-import validation from './validation'
+import useForm from './hooks/useForm';
+import validation from './hooks/validation'
 
 const FormSignUp = () => {
     const {handleChange,handleSubmit,values,error}=useForm(validation);
-   
     return (
         <div className="sign_up">
             <div className="container">
