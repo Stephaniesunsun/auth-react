@@ -1,4 +1,4 @@
-# A Signup/ login two-page application
+# A Signup/ login one-page application
 
 There is no styling in the login page yet.
 
