@@ -4,6 +4,8 @@ There is no styling in the login page yet.
 
 Make API calls to backend endpoint to store users username/ email/ password information being send to server, which will generate a token.
 
+The folder server/ is the backend server.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
